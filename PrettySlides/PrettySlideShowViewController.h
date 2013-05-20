@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PrettySlideShowViewController : UIViewController <UIScrollViewDelegate>
+
 @property (nonatomic ,strong) NSArray *slides;
 
 -(id)initWithSlides:(NSArray *)slides;

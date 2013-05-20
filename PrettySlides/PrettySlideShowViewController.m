@@ -13,7 +13,6 @@
 @interface PrettySlideShowViewController ()
 
 @property (nonatomic, strong) UIScrollView *scrollView;
-@property (nonatomic, strong) NSMutableArray *imageViewStack;
 
 
 @end
@@ -32,7 +31,6 @@
 -(id)initWithSlides:(NSArray *)slides{
     
     if (self=[super init]) {
-        _imageViewStack=[[NSMutableArray alloc] init];
         _slides=slides;
     }
     
@@ -42,8 +40,6 @@
 - (void)viewDidLoad
 {
     self.view.backgroundColor=[UIColor whiteColor];
-    
-    [super viewDidLoad];
     
     [self setupScrollView];
     [self.view addSubview:_scrollView];
