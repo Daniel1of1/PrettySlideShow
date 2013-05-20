@@ -28,17 +28,17 @@
 -(NSArray *)slidesArray{
     
         
-    PrettySlide *slide1 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"I am a Leopard" body:@"watch me slink"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"leopard"]]];
-    PrettySlide *slide2 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"I am a Lion" body:@"symmetrical"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"lion"]]];
-    PrettySlide *slide3 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Snow Leopard" body:@"I have no idea what I'm doing"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"snowLeopard"]]];
-    PrettySlide *slide4 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"I am a Mountain Lion" body:@"master patroniser"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"mountainLion"]]];
+    PrettySlide *slide1 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Leopard" body:@"watch me slink"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"leopard"]]];
+    PrettySlide *slide2 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Snow Leopard" body:@"I have no idea what I'm doing"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"snowLeopard"]]];
+    PrettySlide *slide3 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Lion" body:@"symmetrical"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"lion"]]];
+    PrettySlide *slide4 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Mountain Lion" body:@"master patroniser"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"mountainLion"]]];
 
 
     return @[slide1,slide2,slide3,slide4];
 }
 
 -(UIView *)foregroundViewWithTitle:(NSString *)title body:(NSString *)body{
-    UIView *foreGroundView=[[UIView alloc] initWithFrame:CGRectMake(20, 400, 280, 80)];
+    UIView *foreGroundView=[[UIView alloc] initWithFrame:CGRectMake(20, 340, 280, 80)];
     foreGroundView.backgroundColor=[UIColor clearColor];
     UILabel * label=[[UILabel alloc] initWithFrame:CGRectMake(40, 0, 200, 80)];
     label.backgroundColor=[UIColor clearColor];
