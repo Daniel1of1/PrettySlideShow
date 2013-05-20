@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "PrettySlideShowViewController.h"
+#import "PrettySlide.h"
 
 @implementation AppDelegate
 
@@ -16,14 +17,20 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
-    } else {
-        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
-    }
+    NSArray *slides=[self slidesArray];
+    
+    self.viewController = [[PrettySlideShowViewController alloc] initWithSlides:slides];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(NSArray *)slidesArray{
+    PrettySlide *slide1 =[[PrettySlide alloc] initWithTitle:@"The corner" body:@"it has couches and stuff :P" image:[UIImage imageNamed:@"gg1"]];
+    PrettySlide *slide2 =[[PrettySlide alloc] initWithTitle:@"Pixels" body:@"lots of pixels and stuff" image:[UIImage imageNamed:@"gg2"]];
+    PrettySlide *slide3 =[[PrettySlide alloc] initWithTitle:@"Chair facing window" body:@"it is a chair, that is facing a window, oooo look at the sun!" image:[UIImage imageNamed:@"gg3"]];
+    PrettySlide *slide4 =[[PrettySlide alloc] initWithTitle:@"bleh" body:@"aasdfjlk;" image:[UIImage imageNamed:@"gg4"]];
+    return @[slide1,slide2,slide3,slide4];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

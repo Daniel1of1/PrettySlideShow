@@ -16,14 +16,17 @@
 		18A73D13174A195C001831FE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D12174A195C001831FE /* Default.png */; };
 		18A73D15174A195C001831FE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D14174A195C001831FE /* Default@2x.png */; };
 		18A73D17174A195C001831FE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D16174A195C001831FE /* Default-568h@2x.png */; };
-		18A73D1A174A195C001831FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D19174A195C001831FE /* ViewController.m */; };
-		18A73D1D174A195C001831FE /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D1B174A195C001831FE /* ViewController_iPhone.xib */; };
-		18A73D20174A195C001831FE /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D1E174A195C001831FE /* ViewController_iPad.xib */; };
 		18A73D28174A195D001831FE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A73D27174A195D001831FE /* SenTestingKit.framework */; };
 		18A73D29174A195D001831FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A73D00174A195C001831FE /* UIKit.framework */; };
 		18A73D2A174A195D001831FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A73D02174A195C001831FE /* Foundation.framework */; };
 		18A73D32174A195D001831FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D30174A195D001831FE /* InfoPlist.strings */; };
 		18A73D35174A195D001831FE /* PrettySlidesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D34174A195D001831FE /* PrettySlidesTests.m */; };
+		18A73D40174A19A0001831FE /* PrettySlideShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D3F174A19A0001831FE /* PrettySlideShowViewController.m */; };
+		18A73D43174A19DC001831FE /* PrettySlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D42174A19DC001831FE /* PrettySlide.m */; };
+		18A73D48174A1E95001831FE /* gg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D44174A1E95001831FE /* gg1.png */; };
+		18A73D49174A1E95001831FE /* gg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D45174A1E95001831FE /* gg2.png */; };
+		18A73D4A174A1E95001831FE /* gg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D46174A1E95001831FE /* gg3.png */; };
+		18A73D4B174A1E95001831FE /* gg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D47174A1E95001831FE /* gg4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,16 +53,20 @@
 		18A73D12174A195C001831FE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		18A73D14174A195C001831FE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		18A73D16174A195C001831FE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		18A73D18174A195C001831FE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18A73D19174A195C001831FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		18A73D1C174A195C001831FE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		18A73D1F174A195C001831FE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		18A73D26174A195D001831FE /* PrettySlidesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettySlidesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A73D27174A195D001831FE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		18A73D2F174A195D001831FE /* PrettySlidesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrettySlidesTests-Info.plist"; sourceTree = "<group>"; };
 		18A73D31174A195D001831FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18A73D33174A195D001831FE /* PrettySlidesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrettySlidesTests.h; sourceTree = "<group>"; };
 		18A73D34174A195D001831FE /* PrettySlidesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrettySlidesTests.m; sourceTree = "<group>"; };
+		18A73D3E174A19A0001831FE /* PrettySlideShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettySlideShowViewController.h; sourceTree = "<group>"; };
+		18A73D3F174A19A0001831FE /* PrettySlideShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettySlideShowViewController.m; sourceTree = "<group>"; };
+		18A73D41174A19DC001831FE /* PrettySlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettySlide.h; sourceTree = "<group>"; };
+		18A73D42174A19DC001831FE /* PrettySlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettySlide.m; sourceTree = "<group>"; };
+		18A73D44174A1E95001831FE /* gg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gg1.png; sourceTree = "<group>"; };
+		18A73D45174A1E95001831FE /* gg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gg2.png; sourceTree = "<group>"; };
+		18A73D46174A1E95001831FE /* gg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gg3.png; sourceTree = "<group>"; };
+		18A73D47174A1E95001831FE /* gg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gg4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +126,16 @@
 		18A73D06174A195C001831FE /* PrettySlides */ = {
 			isa = PBXGroup;
 			children = (
+				18A73D44174A1E95001831FE /* gg1.png */,
+				18A73D45174A1E95001831FE /* gg2.png */,
+				18A73D46174A1E95001831FE /* gg3.png */,
+				18A73D47174A1E95001831FE /* gg4.png */,
 				18A73D0F174A195C001831FE /* AppDelegate.h */,
 				18A73D10174A195C001831FE /* AppDelegate.m */,
-				18A73D18174A195C001831FE /* ViewController.h */,
-				18A73D19174A195C001831FE /* ViewController.m */,
-				18A73D1B174A195C001831FE /* ViewController_iPhone.xib */,
-				18A73D1E174A195C001831FE /* ViewController_iPad.xib */,
+				18A73D3E174A19A0001831FE /* PrettySlideShowViewController.h */,
+				18A73D3F174A19A0001831FE /* PrettySlideShowViewController.m */,
+				18A73D41174A19DC001831FE /* PrettySlide.h */,
+				18A73D42174A19DC001831FE /* PrettySlide.m */,
 				18A73D07174A195C001831FE /* Supporting Files */,
 			);
 			path = PrettySlides;
@@ -238,8 +249,10 @@
 				18A73D13174A195C001831FE /* Default.png in Resources */,
 				18A73D15174A195C001831FE /* Default@2x.png in Resources */,
 				18A73D17174A195C001831FE /* Default-568h@2x.png in Resources */,
-				18A73D1D174A195C001831FE /* ViewController_iPhone.xib in Resources */,
-				18A73D20174A195C001831FE /* ViewController_iPad.xib in Resources */,
+				18A73D48174A1E95001831FE /* gg1.png in Resources */,
+				18A73D49174A1E95001831FE /* gg2.png in Resources */,
+				18A73D4A174A1E95001831FE /* gg3.png in Resources */,
+				18A73D4B174A1E95001831FE /* gg4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +289,8 @@
 			files = (
 				18A73D0D174A195C001831FE /* main.m in Sources */,
 				18A73D11174A195C001831FE /* AppDelegate.m in Sources */,
-				18A73D1A174A195C001831FE /* ViewController.m in Sources */,
+				18A73D40174A19A0001831FE /* PrettySlideShowViewController.m in Sources */,
+				18A73D43174A19DC001831FE /* PrettySlide.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,22 +319,6 @@
 				18A73D0A174A195C001831FE /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		18A73D1B174A195C001831FE /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18A73D1C174A195C001831FE /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		18A73D1E174A195C001831FE /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18A73D1F174A195C001831FE /* en */,
-			);
-			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 		18A73D30174A195D001831FE /* InfoPlist.strings */ = {
@@ -467,6 +465,7 @@
 				18A73D3A174A195D001831FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18A73D3B174A195D001831FE /* Build configuration list for PBXNativeTarget "PrettySlidesTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +474,7 @@
 				18A73D3D174A195D001831FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
