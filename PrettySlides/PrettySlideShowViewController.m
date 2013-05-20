@@ -41,13 +41,15 @@
 
 - (void)viewDidLoad
 {
+    self.view.backgroundColor=[UIColor whiteColor];
+    
     [super viewDidLoad];
     
     [self setupScrollView];
-    
+    [self.view addSubview:_scrollView];
+
     [self addPrettySlides];
     
-    [self.view insertSubview:_scrollView aboveSubview:[_imageViewStack objectAtIndex:0]];
 
 	
 }
@@ -62,11 +64,11 @@
     // we change the alpha of the picture at the index we are currently scrolling through and one before and after (unless at the ends)
     //this ensures we don't have 'ghosts' (tiny alpha views) since the scrollviewdid scroll may not fire at exactly the points that set views apha to 0.
     int first = MAX(index-1, 0);
-    int last = MIN(_imageViewStack.count-2, index+1);
+    int last = MIN(_slides.count-2, index+1);
     
     for (int i=first; i<=last; i++) {
-        UIImageView *im=[_imageViewStack objectAtIndex:i];
-        im.alpha=1+i-scrollView.contentOffset.x/self.view.bounds.size.width;
+        UIView *bg=((PrettySlide *)[_slides objectAtIndex:i]).backgroundView;
+        bg.alpha=1+i-scrollView.contentOffset.x/self.view.bounds.size.width;
     }
 }
 
@@ -77,76 +79,24 @@
     _scrollView.delegate=self;
     _scrollView.showsHorizontalScrollIndicator=FALSE;
     _scrollView.pagingEnabled=TRUE;
-    _scrollView.autoresizingMask= UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    self.view.contentMode=UIViewContentModeScaleAspectFill;
+    self.view.contentMode=UIViewContentModeCenter;
 }
 
--(UILabel *)titleLabel{
-    CGRect frame=self.view.bounds;
-    frame.origin.y=frame.origin.y+frame.size.height-160;
-    frame.size.height=30;
-    frame.size.width=200;
-    frame.origin.x=60;
-    UILabel *label=[[UILabel alloc] initWithFrame:frame];
-    label.backgroundColor=[UIColor clearColor];
-    label.font=[UIFont fontWithName:@"Helvetica-Bold" size:20];
-    label.textColor=[UIColor whiteColor];
-    label.textAlignment=NSTextAlignmentCenter;
-    return label;
-}
-
--(UILabel *)bodyLabel{
-    CGRect frame;
-    frame=self.view.bounds;
-    frame.origin.y=frame.origin.y+frame.size.height-120;
-    frame.size.height=40;
-    frame.size.width=280;
-    frame.origin.x=20;
-    UILabel *descriptionLabel=[[UILabel alloc] initWithFrame:frame];
-    descriptionLabel.backgroundColor=[UIColor clearColor];
-    descriptionLabel.layer.cornerRadius=5;
-    descriptionLabel.numberOfLines=5;
-    descriptionLabel.font=[UIFont systemFontOfSize:16];
-    descriptionLabel.textColor=[UIColor whiteColor];
-    descriptionLabel.textAlignment=NSTextAlignmentCenter;
-    [_scrollView addSubview:descriptionLabel];
-    return descriptionLabel;
-}
 
 -(void)addPrettySlides{
+        
+    UIView *previousView=_scrollView;
     
-    int i=0;
-    
-    UIImageView *prevImageView=[[UIImageView alloc] init];
-    
-    [self.view addSubview:prevImageView];
-    
-    for (PrettySlide *slide in _slides) {
+    for (int i=0; i<_slides.count; i++) {
+        //stack backgroundviews below eachother
+        PrettySlide *slide=((PrettySlide *)[_slides objectAtIndex:i]);
+        [self.view insertSubview:slide.backgroundView belowSubview:previousView];
+        previousView=slide.backgroundView;
         
-        //add imageViews to view and to _imageViewStack
-        UIImageView *slideImageView=[[UIImageView alloc] initWithFrame:self.view.bounds];
-        slideImageView.image=slide.image;
-        [self.view insertSubview:slideImageView belowSubview:prevImageView];
-        [_imageViewStack addObject:slideImageView];
-        prevImageView=slideImageView;
-        
-        
-        //add title label
-        UILabel *label=[self titleLabel];
-        CGAffineTransform t=CGAffineTransformMakeTranslation(self.view.bounds.size.width *i, 0);
-        label.frame=CGRectApplyAffineTransform(label.frame, t);
-        label.text=slide.title;
-        
-        [_scrollView addSubview:label];
-        
-        //add bodylabel
-        UILabel *bodyLabel=[self bodyLabel];
-        bodyLabel.frame=CGRectApplyAffineTransform(bodyLabel.frame, t);
-        bodyLabel.text=slide.body;
-        [_scrollView addSubview:label];
-        
-        
-        i++;
+        //space foreground views out by size of frame width
+        CGAffineTransform t=CGAffineTransformMakeTranslation(self.view.bounds.size.width * i, 0);
+        slide.foregroundView.frame=CGRectApplyAffineTransform(slide.foregroundView.frame, t);
+        [_scrollView addSubview:slide.foregroundView];        
     }
 
 }

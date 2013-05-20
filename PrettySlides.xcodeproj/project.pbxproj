@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1869CC1A174A821800A506FB /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = 1869CC17174A821800A506FB /* lion.png */; };
+		1869CC1C174A821800A506FB /* mountainLion.png in Resources */ = {isa = PBXBuildFile; fileRef = 1869CC19174A821800A506FB /* mountainLion.png */; };
+		1869CC20174A88F800A506FB /* leopard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1869CC1F174A88F800A506FB /* leopard.png */; };
+		1869CC22174A8BD700A506FB /* snowLeopard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1869CC21174A8BD700A506FB /* snowLeopard.png */; };
 		18A73D01174A195C001831FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A73D00174A195C001831FE /* UIKit.framework */; };
 		18A73D03174A195C001831FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A73D02174A195C001831FE /* Foundation.framework */; };
 		18A73D05174A195C001831FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A73D04174A195C001831FE /* CoreGraphics.framework */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1869CC17174A821800A506FB /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
+		1869CC19174A821800A506FB /* mountainLion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountainLion.png; sourceTree = "<group>"; };
+		1869CC1F174A88F800A506FB /* leopard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leopard.png; sourceTree = "<group>"; };
+		1869CC21174A8BD700A506FB /* snowLeopard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowLeopard.png; sourceTree = "<group>"; };
 		18A73CFD174A195C001831FE /* PrettySlides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettySlides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A73D00174A195C001831FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18A73D02174A195C001831FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -136,6 +144,10 @@
 				18A73D3F174A19A0001831FE /* PrettySlideShowViewController.m */,
 				18A73D41174A19DC001831FE /* PrettySlide.h */,
 				18A73D42174A19DC001831FE /* PrettySlide.m */,
+				1869CC17174A821800A506FB /* lion.png */,
+				1869CC19174A821800A506FB /* mountainLion.png */,
+				1869CC1F174A88F800A506FB /* leopard.png */,
+				1869CC21174A8BD700A506FB /* snowLeopard.png */,
 				18A73D07174A195C001831FE /* Supporting Files */,
 			);
 			path = PrettySlides;
@@ -253,6 +265,10 @@
 				18A73D49174A1E95001831FE /* gg2.png in Resources */,
 				18A73D4A174A1E95001831FE /* gg3.png in Resources */,
 				18A73D4B174A1E95001831FE /* gg4.png in Resources */,
+				1869CC1A174A821800A506FB /* lion.png in Resources */,
+				1869CC1C174A821800A506FB /* mountainLion.png in Resources */,
+				1869CC20174A88F800A506FB /* leopard.png in Resources */,
+				1869CC22174A8BD700A506FB /* snowLeopard.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
