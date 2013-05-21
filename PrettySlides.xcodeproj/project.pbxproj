@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1869CC1A174A821800A506FB /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = 1869CC17174A821800A506FB /* lion.png */; };
+		1869CC1C174A821800A506FB /* mountainLion.png in Resources */ = {isa = PBXBuildFile; fileRef = 1869CC19174A821800A506FB /* mountainLion.png */; };
+		1869CC20174A88F800A506FB /* leopard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1869CC1F174A88F800A506FB /* leopard.png */; };
+		1869CC22174A8BD700A506FB /* snowLeopard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1869CC21174A8BD700A506FB /* snowLeopard.png */; };
 		18A73D01174A195C001831FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A73D00174A195C001831FE /* UIKit.framework */; };
 		18A73D03174A195C001831FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A73D02174A195C001831FE /* Foundation.framework */; };
 		18A73D05174A195C001831FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A73D04174A195C001831FE /* CoreGraphics.framework */; };
@@ -23,10 +27,6 @@
 		18A73D35174A195D001831FE /* PrettySlidesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D34174A195D001831FE /* PrettySlidesTests.m */; };
 		18A73D40174A19A0001831FE /* PrettySlideShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D3F174A19A0001831FE /* PrettySlideShowViewController.m */; };
 		18A73D43174A19DC001831FE /* PrettySlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D42174A19DC001831FE /* PrettySlide.m */; };
-		18A73D48174A1E95001831FE /* gg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D44174A1E95001831FE /* gg1.png */; };
-		18A73D49174A1E95001831FE /* gg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D45174A1E95001831FE /* gg2.png */; };
-		18A73D4A174A1E95001831FE /* gg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D46174A1E95001831FE /* gg3.png */; };
-		18A73D4B174A1E95001831FE /* gg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A73D47174A1E95001831FE /* gg4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1869CC17174A821800A506FB /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
+		1869CC19174A821800A506FB /* mountainLion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountainLion.png; sourceTree = "<group>"; };
+		1869CC1F174A88F800A506FB /* leopard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leopard.png; sourceTree = "<group>"; };
+		1869CC21174A8BD700A506FB /* snowLeopard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowLeopard.png; sourceTree = "<group>"; };
 		18A73CFD174A195C001831FE /* PrettySlides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettySlides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A73D00174A195C001831FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18A73D02174A195C001831FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,10 +67,6 @@
 		18A73D3F174A19A0001831FE /* PrettySlideShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettySlideShowViewController.m; sourceTree = "<group>"; };
 		18A73D41174A19DC001831FE /* PrettySlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettySlide.h; sourceTree = "<group>"; };
 		18A73D42174A19DC001831FE /* PrettySlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettySlide.m; sourceTree = "<group>"; };
-		18A73D44174A1E95001831FE /* gg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gg1.png; sourceTree = "<group>"; };
-		18A73D45174A1E95001831FE /* gg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gg2.png; sourceTree = "<group>"; };
-		18A73D46174A1E95001831FE /* gg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gg3.png; sourceTree = "<group>"; };
-		18A73D47174A1E95001831FE /* gg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gg4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +93,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1869CC29174B812500A506FB /* PrettySlideShow */ = {
+			isa = PBXGroup;
+			children = (
+				18A73D3E174A19A0001831FE /* PrettySlideShowViewController.h */,
+				18A73D3F174A19A0001831FE /* PrettySlideShowViewController.m */,
+				18A73D41174A19DC001831FE /* PrettySlide.h */,
+				18A73D42174A19DC001831FE /* PrettySlide.m */,
+			);
+			name = PrettySlideShow;
+			sourceTree = "<group>";
+		};
 		18A73CF4174A195C001831FE = {
 			isa = PBXGroup;
 			children = (
@@ -126,16 +137,13 @@
 		18A73D06174A195C001831FE /* PrettySlides */ = {
 			isa = PBXGroup;
 			children = (
-				18A73D44174A1E95001831FE /* gg1.png */,
-				18A73D45174A1E95001831FE /* gg2.png */,
-				18A73D46174A1E95001831FE /* gg3.png */,
-				18A73D47174A1E95001831FE /* gg4.png */,
+				1869CC29174B812500A506FB /* PrettySlideShow */,
 				18A73D0F174A195C001831FE /* AppDelegate.h */,
 				18A73D10174A195C001831FE /* AppDelegate.m */,
-				18A73D3E174A19A0001831FE /* PrettySlideShowViewController.h */,
-				18A73D3F174A19A0001831FE /* PrettySlideShowViewController.m */,
-				18A73D41174A19DC001831FE /* PrettySlide.h */,
-				18A73D42174A19DC001831FE /* PrettySlide.m */,
+				1869CC17174A821800A506FB /* lion.png */,
+				1869CC19174A821800A506FB /* mountainLion.png */,
+				1869CC1F174A88F800A506FB /* leopard.png */,
+				1869CC21174A8BD700A506FB /* snowLeopard.png */,
 				18A73D07174A195C001831FE /* Supporting Files */,
 			);
 			path = PrettySlides;
@@ -249,10 +257,10 @@
 				18A73D13174A195C001831FE /* Default.png in Resources */,
 				18A73D15174A195C001831FE /* Default@2x.png in Resources */,
 				18A73D17174A195C001831FE /* Default-568h@2x.png in Resources */,
-				18A73D48174A1E95001831FE /* gg1.png in Resources */,
-				18A73D49174A1E95001831FE /* gg2.png in Resources */,
-				18A73D4A174A1E95001831FE /* gg3.png in Resources */,
-				18A73D4B174A1E95001831FE /* gg4.png in Resources */,
+				1869CC1A174A821800A506FB /* lion.png in Resources */,
+				1869CC1C174A821800A506FB /* mountainLion.png in Resources */,
+				1869CC20174A88F800A506FB /* leopard.png in Resources */,
+				1869CC22174A8BD700A506FB /* snowLeopard.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

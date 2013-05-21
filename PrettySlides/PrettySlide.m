@@ -10,21 +10,12 @@
 
 @implementation PrettySlide
 
-- (id)initWithTitle:(NSString *)title body:(NSString *)body image:(UIImage *)image
-{
+
+-(id)initWithForegroundView:(UIView *)foregroundView backgroundView:(UIView *)backgroundView{
     self = [super init];
     if (self) {
-        _title=title;
-        _body=body;
-        _image=image;
-    }
-    return self;
-}
--(id)initWithForeground:(UIView *)foreground background:(UIView *)background{
-    self = [super init];
-    if (self) {
-        _foreground=foreground;
-        _background=background;
+        _foregroundView=foregroundView;
+        _backgroundView=backgroundView;
     }
     return self;
 

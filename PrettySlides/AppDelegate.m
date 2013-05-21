@@ -26,11 +26,60 @@
 }
 
 -(NSArray *)slidesArray{
-    PrettySlide *slide1 =[[PrettySlide alloc] initWithTitle:@"The corner" body:@"it has couches and stuff :P" image:[UIImage imageNamed:@"gg1"]];
-    PrettySlide *slide2 =[[PrettySlide alloc] initWithTitle:@"Pixels" body:@"lots of pixels and stuff" image:[UIImage imageNamed:@"gg2"]];
-    PrettySlide *slide3 =[[PrettySlide alloc] initWithTitle:@"Chair facing window" body:@"it is a chair, that is facing a window, oooo look at the sun!" image:[UIImage imageNamed:@"gg3"]];
-    PrettySlide *slide4 =[[PrettySlide alloc] initWithTitle:@"bleh" body:@"aasdfjlk;" image:[UIImage imageNamed:@"gg4"]];
+    
+        
+    PrettySlide *slide1 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Leopard" body:@"watch me slink"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"leopard"]]];
+    PrettySlide *slide2 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Snow Leopard" body:@"I have no idea what I'm doing"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"snowLeopard"]]];
+    PrettySlide *slide3 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Lion" body:@"I'll admit that some of this hair is weave"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"lion"]]];
+    PrettySlide *slide4 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Mountain Lion" body:@"Being In this tree amplifies my patronising ability"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"mountainLion"]]];
+
+
     return @[slide1,slide2,slide3,slide4];
+}
+
+
+//Demo foreground and background views
+-(UIView *)foregroundViewWithTitle:(NSString *)title body:(NSString *)body{
+    CGRect frame=self.window.bounds;
+    frame.size.height=100;
+    frame.origin.y=self.window.bounds.size.height-frame.size.height;
+    UIView *foreGroundView=[[UIView alloc] initWithFrame:frame];
+    foreGroundView.backgroundColor=[UIColor clearColor];
+    
+    frame=foreGroundView.bounds;
+    frame.size.height=20;
+    UILabel * label=[[UILabel alloc] initWithFrame:frame];
+    label.backgroundColor=[UIColor clearColor];
+    label.textAlignment=UITextAlignmentCenter;
+    label.font=[UIFont fontWithName:@"Helvetica-Bold" size:20];
+    label.text=title;
+    label.textColor=[UIColor whiteColor];
+    [foreGroundView addSubview:label];
+    
+    frame=foreGroundView.bounds;
+    frame.size.height=50;
+    frame.origin.y=20;
+    UITextView * bodyLabel=[[UITextView alloc] initWithFrame:frame];
+    bodyLabel.backgroundColor=[UIColor clearColor];
+    bodyLabel.textAlignment=UITextAlignmentCenter;
+    bodyLabel.font=[UIFont fontWithName:@"Helvetica" size:16];
+    bodyLabel.text=body;
+    bodyLabel.textColor=[UIColor whiteColor];
+    bodyLabel.userInteractionEnabled=FALSE;
+    [foreGroundView addSubview:bodyLabel];
+
+    return foreGroundView;
+}
+
+-(UIView *)backgroundViewWithImage:(UIImage *)image{
+    UIView *backgroundView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
+    backgroundView.clipsToBounds=FALSE;
+    UIImageView  *immy=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
+    immy.image=image;
+    immy.contentMode=UIViewContentModeScaleAspectFill;
+    [backgroundView addSubview:immy];
+
+    return backgroundView;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
