@@ -101,6 +101,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1869CC29174B812500A506FB /* PrettySlideShow */ = {
+			isa = PBXGroup;
+			children = (
+				18A73D3E174A19A0001831FE /* PrettySlideShowViewController.h */,
+				18A73D3F174A19A0001831FE /* PrettySlideShowViewController.m */,
+				18A73D41174A19DC001831FE /* PrettySlide.h */,
+				18A73D42174A19DC001831FE /* PrettySlide.m */,
+			);
+			name = PrettySlideShow;
+			sourceTree = "<group>";
+		};
 		18A73CF4174A195C001831FE = {
 			isa = PBXGroup;
 			children = (
@@ -134,16 +145,13 @@
 		18A73D06174A195C001831FE /* PrettySlides */ = {
 			isa = PBXGroup;
 			children = (
+				1869CC29174B812500A506FB /* PrettySlideShow */,
 				18A73D44174A1E95001831FE /* gg1.png */,
 				18A73D45174A1E95001831FE /* gg2.png */,
 				18A73D46174A1E95001831FE /* gg3.png */,
 				18A73D47174A1E95001831FE /* gg4.png */,
 				18A73D0F174A195C001831FE /* AppDelegate.h */,
 				18A73D10174A195C001831FE /* AppDelegate.m */,
-				18A73D3E174A19A0001831FE /* PrettySlideShowViewController.h */,
-				18A73D3F174A19A0001831FE /* PrettySlideShowViewController.m */,
-				18A73D41174A19DC001831FE /* PrettySlide.h */,
-				18A73D42174A19DC001831FE /* PrettySlide.m */,
 				1869CC17174A821800A506FB /* lion.png */,
 				1869CC19174A821800A506FB /* mountainLion.png */,
 				1869CC1F174A88F800A506FB /* leopard.png */,
