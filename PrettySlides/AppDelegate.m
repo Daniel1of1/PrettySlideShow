@@ -40,9 +40,13 @@
 
 //Demo foreground and background views
 -(UIView *)foregroundViewWithTitle:(NSString *)title body:(NSString *)body{
-    UIView *foreGroundView=[[UIView alloc] initWithFrame:CGRectMake(20, 380, 280, 200)];
+    CGRect frame=self.window.bounds;
+    frame.size.height=100;
+    frame.origin.y=self.window.bounds.size.height-frame.size.height;
+    UIView *foreGroundView=[[UIView alloc] initWithFrame:frame];
     foreGroundView.backgroundColor=[UIColor clearColor];
-    CGRect frame=foreGroundView.bounds;
+    
+    frame=foreGroundView.bounds;
     frame.size.height=20;
     UILabel * label=[[UILabel alloc] initWithFrame:frame];
     label.backgroundColor=[UIColor clearColor];
