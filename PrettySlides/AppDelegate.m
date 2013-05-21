@@ -30,17 +30,21 @@
         
     PrettySlide *slide1 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Leopard" body:@"watch me slink"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"leopard"]]];
     PrettySlide *slide2 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Snow Leopard" body:@"I have no idea what I'm doing"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"snowLeopard"]]];
-    PrettySlide *slide3 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Lion" body:@"symmetrical"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"lion"]]];
-    PrettySlide *slide4 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Mountain Lion" body:@"master patroniser"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"mountainLion"]]];
+    PrettySlide *slide3 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Lion" body:@"I'll admit that some of this hair is weave"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"lion"]]];
+    PrettySlide *slide4 =[[PrettySlide alloc] initWithForegroundView:[self foregroundViewWithTitle:@"Mountain Lion" body:@"Being In this tree amplifies my patronising ability"] backgroundView:[self backgroundViewWithImage:[UIImage imageNamed:@"mountainLion"]]];
 
 
     return @[slide1,slide2,slide3,slide4];
 }
 
+
+//Demo foreground and background views
 -(UIView *)foregroundViewWithTitle:(NSString *)title body:(NSString *)body{
-    UIView *foreGroundView=[[UIView alloc] initWithFrame:CGRectMake(20, 340, 280, 80)];
+    UIView *foreGroundView=[[UIView alloc] initWithFrame:CGRectMake(20, 380, 280, 200)];
     foreGroundView.backgroundColor=[UIColor clearColor];
-    UILabel * label=[[UILabel alloc] initWithFrame:CGRectMake(40, 0, 200, 80)];
+    CGRect frame=foreGroundView.bounds;
+    frame.size.height=20;
+    UILabel * label=[[UILabel alloc] initWithFrame:frame];
     label.backgroundColor=[UIColor clearColor];
     label.textAlignment=UITextAlignmentCenter;
     label.font=[UIFont fontWithName:@"Helvetica-Bold" size:20];
@@ -48,7 +52,10 @@
     label.textColor=[UIColor whiteColor];
     [foreGroundView addSubview:label];
     
-    UITextField * bodyLabel=[[UITextField alloc] initWithFrame:CGRectMake(0, 60, 280, 80)];
+    frame=foreGroundView.bounds;
+    frame.size.height=50;
+    frame.origin.y=20;
+    UITextView * bodyLabel=[[UITextView alloc] initWithFrame:frame];
     bodyLabel.backgroundColor=[UIColor clearColor];
     bodyLabel.textAlignment=UITextAlignmentCenter;
     bodyLabel.font=[UIFont fontWithName:@"Helvetica" size:16];
@@ -56,7 +63,6 @@
     bodyLabel.textColor=[UIColor whiteColor];
     bodyLabel.userInteractionEnabled=FALSE;
     [foreGroundView addSubview:bodyLabel];
-
 
     return foreGroundView;
 }
